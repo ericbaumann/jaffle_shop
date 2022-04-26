@@ -5,5 +5,5 @@ with customers_target as
 
 select * from customers_target
 {% if target.name == 'prod' %}
-where first_name == 'Eric'
+limit 5
 {% endif %}
